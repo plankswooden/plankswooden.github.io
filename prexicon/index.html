@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Prexicon</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Prexicon</h1>
+    <label for="sourceLanguage">Select Source Language:</label>
+    <select id="sourceLanguage">
+    <option value="py">Python</option>
+    <option value="Java">Java</option>
+  <!-- Add more language options as needed -->
+    </select>
+    <label for="sourceText">Enter Code to Translate:</label>
+    <textarea id="sourceText" rows="4" cols="50"></textarea>
+    <button id="translateButton">Translate</button>
+    <label for="translatedText">Translated Text:</label>
+    <div id="translatedText"></div>
+  </div>
+  <script src="translations.js"></script>
+</body>
+</html>

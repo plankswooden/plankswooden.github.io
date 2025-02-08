@@ -1,0 +1,38 @@
+body {
+  background-color: #50c878 !important;
+}
+h1 {
+  color: #1f6135;
+}
+h2 {
+  color: #1f6135;
+}
+h4 {
+  color: #1f6135;
+}
+h3 {
+  color: #1f6135;
+}  
+a:link {
+  color: #1f6135;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #1f6135;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: green;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: green;
+  background-color: transparent;
+  text-decoration: underline;
+}

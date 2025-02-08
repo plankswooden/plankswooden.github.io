@@ -1,0 +1,270 @@
+@font-face{
+    font-family: "Kenney";
+    src: url("Kenney Pixel Square.ttf");
+}
+
+@font-face {
+    font-family: "OpenDyslexic";
+    src: url("OpenDyslexic-Regular.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --custom-font: Kenney, Kenney-Pixel-Square, Arial, sans-serif;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	font-family: var(--custom-font);
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #f8dfa1;
+}
+
+
+
+.header {
+	min-height: 154vh;
+	min-width: 85vw;
+	background-image: linear-gradient(rgba(248, 223, 161, 0.7), rgba(255, 255, 255, 0.288)), url(bkg.jpg);
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+
+.navbar {
+	display: flex;
+  justify-content: space-between;
+	float: right;
+}
+
+.navbar-links ul {
+	display: flex;
+	position: sticky;
+}
+
+.navbar-links ul li {
+	list-style: none;
+	position: sticky;
+}
+
+.navbar-links ul li a {
+	font-size: 1.4rem;
+	display: block;
+	position: sticky;
+}
+
+a:link {
+	color: black;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+a:visited {
+	color: black;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+a:hover {
+	color: white;
+	background-color: transparent;
+	text-decoration: underline;
+}
+
+a:active {
+	color: white;
+	background-color: transparent;
+	text-decoration: underline;
+}
+
+h1, p {
+	color: white;
+}
+
+.ID {
+	width: 99%;
+	top: 50px;
+	position: absolute;
+	margin: 4px;
+	padding: 10px;
+	background: #f8dfa1;
+	border: solid black;
+	text-align: center;
+
+}
+
+.ID a:link {
+	color: black;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+.ID a:visited {
+	color: black;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+.images {
+	display: flex;
+	width: 10vmax;
+	flex-direction: row;
+	background-color: gray;
+	border: solid black;
+	margin-bottom: 2px;
+	margin-right: 3px;
+}
+.images2 {
+	display: flex;
+	width: 5vmax;
+	flex-direction: row;
+	background-color: gray;
+	border: solid black;
+	margin-bottom: 2px;
+	margin-right: 3px;
+}
+
+.ID h1 {
+	padding-bottom: 10px;
+	color: black;
+	text-align: left;
+}
+
+.IDText a, p, li {
+	font-size: 20px;
+	padding-right: 15px;
+	padding-left: 2px;
+	float: none;
+	color: black;
+	display: flex;
+	flex-direction: row;
+	text-align: left;
+	top: 1px;
+}
+
+.IDText ul, li {
+	list-style-type: none;
+}
+
+.actpage {
+	background-color: #f8dfa1;
+	border: solid black;
+}
+.center {
+  position: absolute; 
+  bottom: auto;
+  right: 0; 
+  left: 0; 
+  text-align: center;   
+  vertical-align: middle;
+}
+.feet {
+	border: solid black;
+	padding: 70px;
+	width:  100%;
+	float: none;
+}
+.feet p {
+	font-size: 20px;
+	display: inline-block; 
+	vertical-align: middle;
+	text-align: center;
+	margin-bottom: 300px;
+	position: absolute; 
+  top: 156vh;
+  right: 0; 
+  left: 0; 
+}
+.feet img a {
+	display: inline-block; 
+	margin-bottom: 0px;
+	margin-right: 15px;
+	margin-left: 15px;
+	top: -20px;
+	right: auto;
+	left: auto;
+	vertical-align: middle;
+	text-align: center;
+}
+.projecttxt li h3 {
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+#font-toggle-button {
+    position: fixed;
+    bottom: 10px; /* Adjust this value to control vertical position */
+    left: 10px; /* Adjust this value to control horizontal position */
+    padding: 10px 15px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Style the button on hover */
+#font-toggle-button:hover {
+    background-color: #555;
+}
+
+@media (max-width: 500px) {
+
+	.ID {
+		width: 98%;
+		position: absolute;
+		text-align: center;
+		top: 20%; 
+	}
+	.IDText a, p, li {
+		font-size: 15px;
+	}
+	
+	
+	.feet i {
+	margin-right: 5px;
+	margin-left: 5px;
+	}
+
+	.ID h1 {
+	  font-size: 17px;
+		text-align: left;
+	}
+	.navbar {
+		flex-direction: column;
+	}
+	.navbar-links {
+		flex-direction: column;
+		width: 100vw;
+	} 
+	.navbar-links ul {
+		width: 100vw;
+		flex-direction: column;
+		text-align: center;
+	}
+	.navbar-links ul li {
+		width: 100vw;
+		flex-direction: column;
+		text-align: center;
+	}
+}
+
+@media (min-width: 700px) {
+	.IDText a, p, li {
+		padding-right: 15px;
+	}
+}
+
+
+@media (max-width: 300px) {
+  .feet i {
+	margin-right: 3px;
+	margin-left: 3px;
+	}
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Keyboard Layout Tester</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Keyboard Layout Tester</h1>
+  <label for="layoutSelect">Select Layout:</label>
+  <select id="layoutSelect">
+    <option value="ISO_SWE_FIN">ISO SWE/FIN</option>
+    <option value="ANSI_NORDICS">ANSI NORDICS</option>
+  </select>
+  <div id="keyboard">
+    <!-- Keyboard layout will be generated here -->
+  </div>
+  <div>
+    <h2>Test Your Typing:</h2>
+    <textarea id="typingArea" rows="5" cols="50" placeholder="Start typing..."></textarea>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
